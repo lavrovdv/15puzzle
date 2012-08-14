@@ -8,7 +8,7 @@
     <script src="lib/state.js"></script>
     <script src="lib/A.js"></script>
     <script src="lib/game.js"></script>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <div id="main">
@@ -17,15 +17,14 @@
     </div>
     <div id="menu">
         <div class="score_menu">
-            <div id="score_value">1000</div>
+            <div id="score_value">0</div>
             <div class="label">колличество ходов</div>
         </div>
         <div class="buttons_menu">
-            <div class="button">Начать</div>
-            <div class="button">Играть автоматически</div>
+            <div id="new_game" class="button">Перемешать</div>
+            <div id="automatic_game" class="button">Играть автоматически</div>
         </div>
-        <div class="messages">
-           Для начала игры нажмите кнопку "Начать".
+        <div id="messages">
             <!--<span class="error">-->
                 <!--Для данной комбинации решение отсутствует. Задайте другую комбинациию или начните новую игру.-->
             <!--</span>-->

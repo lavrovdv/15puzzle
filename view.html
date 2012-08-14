@@ -3,11 +3,46 @@
 <head>
     <title></title>
     <script src="lib/jquery-1.8.0.min.js"></script>
+    <script src="lib/mustache.js"></script>
     <script src="lib/util.js"></script>
-    <script src="lib/State.js"></script>
-    <script src="lib/15puzzle.js"></script>
+    <script src="lib/state.js"></script>
+    <script src="lib/A.js"></script>
+    <script src="lib/game.js"></script>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-
+<div id="main">
+    <div id="content">
+        <table id="field" border="1"><tbody><tr><td><div class="sell" v="1">1</div></td><td><div class="sell" v="2">2</div></td><td><div class="sell" v="3">3</div></td><td><div class="sell" v="4">4</div></td></tr><tr><td><div class="sell" v="5">5</div></td><td><div class="sell" v="6">6</div></td><td><div class="sell" v="7">7</div></td><td><div class="sell" v="8">8</div></td></tr><tr><td><div class="sell" v="9">9</div></td><td><div class="sell" v="10">10</div></td><td><div class="sell" v="11">11</div></td><td><div class="sell" v="12">12</div></td></tr><tr><td><div class="sell" v="13">13</div></td><td><div class="sell" v="14">14</div></td><td><div class="sell" v="15">15</div></td><td><div class="sell" v="0">0</div></td></tr></tbody></table>
+    </div>
+    <div id="menu">
+        <div class="score_menu">
+            <div id="score_value">1000</div>
+            <div class="label">колличество ходов</div>
+        </div>
+        <div class="buttons_menu">
+            <div class="button">Начать</div>
+            <div class="button">Играть автоматически</div>
+        </div>
+        <div class="messages">
+           Для начала игры нажмите кнопку "Начать".
+            <!--<span class="error">-->
+                <!--Для данной комбинации решение отсутствует. Задайте другую комбинациию или начните новую игру.-->
+            <!--</span>-->
+        </div>
+    </div>
+</div>
 </body>
 </html>
+
+<!--
+Алгоритм анимации
+
+подсвечиваем следующий 0
+ждем
+перерисовываем состояние с подсвеченым предидущим 0
+ждем
+гасим подсветку
+подсвечиваем следующий 0
+
+-->

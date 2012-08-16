@@ -2,12 +2,17 @@ html,body{
     font-family: Verdana,serif;
     background-color: #f8f8f8;
 }
+#field, td, th{
+    border-collapse: collapse;
+    border: 1px solid #c6c6c6;
+    vertical-align: middle;
+    text-align: center;
+}
 
 #field{
     border-collapse: collapse;
     font-size: 30px;
     color: #8d8d8d;
-    /*background-color: gray;*/
 }
 
 #content{
@@ -17,19 +22,45 @@ html,body{
 #field td{
     text-align: center;
     vertical-align: middle;
-    border: 1px solid #c6c6c6;
-    width: 97px;
-    height:97px;
+    width: 100px;
+    height:100px;
 }
 
 .sell{
+    margin: auto;
     cursor: pointer;
     line-height: 93px;
+    width: 93px;
+    height: 93px;
     background-color: white;
 
 }
-.sell[v="0"]{
+
+.sell:active{
+    box-shadow:inset 0 0 8px #2CA0CA !important;
+    background-color: #fdfdfd;
+}
+
+.sell[v="0"] span{
     display: none;
+}
+
+.sell[v="0"]{
+    cursor: default;
+}
+.sell[v="0"]{
+    background-color: #e9e9e9;
+    border-radius: 5px;
+}
+.sell[v="0"]:hover{
+    box-shadow: 0 0 1px #e9e9e9;
+    border: 1px solid #e9e9e9;
+    background-color: #e9e9e9;
+}
+.sell[v="0"]:active{
+    box-shadow:inset 0 0 1px #e9e9e9 !important;
+    border: 1px solid #e9e9e9;
+    background-color: #e9e9e9;
 }
 
 .sell:hover{
@@ -39,18 +70,14 @@ html,body{
     color: #2CA0CA;
 }
 
-.sell:active{
-    box-shadow:inset 0 0 8px #2CA0CA !important;
-    background-color: #fdfdfd;
-}
+
 
 #main{
-    width: 640px;
-    height: 400px;
-    padding: 20px;
+    width: 650px;
+    height: 410px;
+    padding: 25px;
     margin:150px auto;
     background-color: white;
-    /*border: 1px solid gray;*/
     border-radius: 10px;
     box-shadow: 0 0 25px #9b9b9b;
 }

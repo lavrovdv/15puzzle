@@ -2,6 +2,7 @@ html,body{
     font-family: Verdana,serif;
     background-color: #f8f8f8;
 }
+
 #field, td, th{
     border-collapse: collapse;
     border: 1px solid #c6c6c6;
@@ -70,8 +71,6 @@ html,body{
     color: #2CA0CA;
 }
 
-
-
 #main{
     width: 650px;
     height: 410px;
@@ -107,14 +106,12 @@ html,body{
     width: 200px;
     height: 120px;
     font-size: 15px;
-    /*color: #8d8d8d;*/
     color: #2CA0CA;
     font-weight: bold;
 }
 
 .error{
     color: #bf3821;
-
 }
 
 .button {
@@ -127,7 +124,6 @@ html,body{
     color:#fff;
     position:relative;
     padding:10px 13px;
-    /*padding-right:50px;*/
     background-image: linear-gradient(bottom, rgb(44,160,202) 0%, rgb(62,184,229) 100%);
     background-image: -o-linear-gradient(bottom, rgb(44,160,202) 0%, rgb(62,184,229) 100%);
     background-image: -moz-linear-gradient(bottom, rgb(44,160,202) 0%, rgb(62,184,229) 100%);
